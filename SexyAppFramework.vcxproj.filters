@@ -515,7 +515,6 @@
       <Filter>Sound\Ogg</Filter>
     </ClInclude>
     <ClInclude Include="SexyAppFramework\SexyAppBase.h" />
-    <ClInclude Include="Dependencies\include\unix\syscorecrt.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SexyAppFramework\graphics\inc_routines\BltRotatedHelper.inc">

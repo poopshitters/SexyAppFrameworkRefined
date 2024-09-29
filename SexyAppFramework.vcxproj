@@ -263,7 +263,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include=".\SexyAppFramework\widget\WidgetManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dependencies\include\unix\syscorecrt.h" />
     <ClInclude Include="SexyAppFramework\Common.h" />
     <ClInclude Include="SexyAppFramework\fcaseopen\fcaseopen.h" />
     <ClInclude Include="SexyAppFramework\graphics\Color.h" />
