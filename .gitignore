@@ -36,7 +36,8 @@ bld/
 [Ll]ogs/
 
 # Dependencies
-!Dependencies/lib/
+!Dependencies/lib/Debug/
+!Dependencies/lib/Release/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
