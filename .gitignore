@@ -40,8 +40,6 @@ bld/
 !Dependencies/lib/Release/
 
 # might get me killed 
-SexyAppFramework/SexyApp.cpp
-SexyAppFramework/SexyApp.h
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
