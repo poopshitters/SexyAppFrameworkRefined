@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{8c49b015-e650-44eb-a857-3ccfed5ddb5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Graphics Source">
+      <UniqueIdentifier>{3f47ca70-570f-4601-9eaa-d34c51a68841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Graphics Include">
+      <UniqueIdentifier>{b8b6a307-f861-49fd-a512-eea934bbb16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Inc Routines">
+      <UniqueIdentifier>{4916962e-c9e6-4489-bb85-405132d636d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageLib">
+      <UniqueIdentifier>{e01c1276-7e69-4406-83e5-d89c1706b7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{e9dc4092-8f55-4a19-97f9-634353eaf5d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Misc Source">
+      <UniqueIdentifier>{40396482-705b-44a0-b166-7c4bc1d09719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Misc Include">
+      <UniqueIdentifier>{8cbe312b-e750-4686-b6b7-8eeb70abfad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{df38e3b6-65e7-47de-b78b-6eef6d181910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Sound Source">
+      <UniqueIdentifier>{4bc03f39-356a-4f7a-a250-20fe8fae10fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Sound Include">
+      <UniqueIdentifier>{86fa0486-8c09-42ac-b75f-0079a074a296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Ogg">
+      <UniqueIdentifier>{d3686375-e96d-4c56-9e69-91ad9acfc6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget">
+      <UniqueIdentifier>{24788cf2-bc0e-4397-b01b-c9129d24f2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\Widget Source">
+      <UniqueIdentifier>{6a1e34f2-2747-4061-b667-f57d017efe49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\Widget Include">
+      <UniqueIdentifier>{8fcae68a-858a-429b-9bb6-3d760f1debc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PakLib">
+      <UniqueIdentifier>{add68212-9cf2-43a8-8296-d87eb49f12c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FCaseOpen">
+      <UniqueIdentifier>{4ed937af-2080-4683-b878-d8978aebf1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\Widget Listeners">
+      <UniqueIdentifier>{ea9d03ce-315b-4966-96e8-6123e28a8d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{30c4965b-d159-4e77-beeb-63a463efff37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\SexyAppFramework\misc\Buffer.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\ButtonWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\Checkbox.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\Color.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\CritSect.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\Debug.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\DescParser.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\Dialog.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\DialogButton.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\EditWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\Flags.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\Font.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\GLImage.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\Graphics.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\HyperlinkWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\Image.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\ImageFont.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\imagelib\ImageLib.cpp">
+      <Filter>ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\Insets.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\KeyCodes.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\ModVal.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\MTRand.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\MemoryImage.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\ListWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\NativeDisplay.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\paklib\PakInterface.cpp">
+      <Filter>PakLib</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\PerfTimer.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\Quantize.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\PropertiesParser.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\Ratio.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\RegEmu.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\ResourceManager.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\ScrollbarWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\ScrollbuttonWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\WidgetManager.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\XMLParser.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\sound\SDLMusicInterface.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundInstance.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundManager.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\SWTri.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\misc\SexyMatrix.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\graphics\SharedImage.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\WidgetContainer.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\TextWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\Widget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\widget\Slider.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\fcaseopen\fcaseopen.c">
+      <Filter>FCaseOpen</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\SexyApp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\bitwise.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\block.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\codebook.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\floor0.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\floor1.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\framing.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\info.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\mapping0.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\mdct.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\registry.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\res012.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\sharedbook.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\synthesis.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\vorbisfile.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\ogg\window.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SexyAppFramework\SexyAppBase.cpp" />
+    <ClCompile Include="SexyAppFramework\graphics\GLInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SexyAppFramework\misc\Buffer.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\ButtonWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\Checkbox.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\Color.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\CritSect.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\Debug.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\DescParser.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\Dialog.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\DialogButton.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\EditWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\EditListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\Flags.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\Font.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\GLImage.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\GLInterface.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\Graphics.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\HyperlinkWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\Image.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\ImageFont.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\imagelib\ImageLib.h">
+      <Filter>ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\Insets.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\KeyCodes.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\ModVal.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\MemoryImage.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\MTRand.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\ListWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\NativeDisplay.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\paklib\PakInterface.h">
+      <Filter>PakLib</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\PerfTimer.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\Quantize.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\PropertiesParser.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\Ratio.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\RegEmu.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\ResourceManager.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\ScrollbarWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\ScrollbuttonWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\Slider.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\SDLMusicInterface.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\SDLSoundInstance.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\SDLSoundManager.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\SWTri.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\SexyMatrix.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\SharedImage.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\TextWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\Widget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\WidgetContainer.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\WidgetManager.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\XMLParser.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\fcaseopen\fcaseopen.h">
+      <Filter>FCaseOpen</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\graphics\TriVertex.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\AutoCrit.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\memmgr.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\Rect.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\SexyVector.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\SmartPtr.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\misc\Point.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\DummyMusicInterface.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\SoundInstance.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\SoundManager.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\MusicInterface.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\ButtonListener.h">
+      <Filter>Widget\Widget Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\CheckboxListener.h">
+      <Filter>Widget\Widget Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\DialogListener.h">
+      <Filter>Widget\Widget Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\ListListener.h">
+      <Filter>Widget\Widget Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\ScrollListener.h">
+      <Filter>Widget\Widget Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\widget\SliderListener.h">
+      <Filter>Widget\Widget Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\SexyApp.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\_G_config.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\asm_arm.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\backends.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\codebook.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\codec_internal.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\config_types.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\ivorbiscodec.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\ivorbisfile.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\lsp_lookup.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\mdct.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\mdct_lookup.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\misc.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\ogg.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\os.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\os_types.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\registry.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\window.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\ogg\window_lookup.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\SexyAppBase.h" />
+    <ClInclude Include="Dependencies\include\unix\syscorecrt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SexyAppFramework\graphics\inc_routines\BltRotatedHelper.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_AlphaBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_BltRotated.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_BltRotated_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_FastBlt_NoAlpha.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_FastStretch.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_FastStretch_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_NormalBlt_Volatile.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\GENERIC_DrawLineAA.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_AdditiveBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_BltRotated.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_BltRotated_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_GetNativeAlphaData.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_GetRLAlphaData.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_NormalBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_SlowStretchBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\SexyAppFramework\SexyAppFramework.rc" />
+  </ItemGroup>
+</Project>

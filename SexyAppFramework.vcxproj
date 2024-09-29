@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FD5B55F-F6E6-39CB-8161-42CDABC2D18E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>SexyAppFramework</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\Build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\Build\Intermediate-$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SexyAppFramework</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Build\Intermediate-$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SexyAppFramework</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)Dependencies\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\lib\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Dependencies\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\lib\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\GLM;$(SolutionDir)Dependencies\include\SDL2;$(SolutionDir)Dependencies\include\unix;$(SolutionDir)SexyAppFramework\sound\SDL-Mixer-X\include;$(SolutionDir)SexyAppFramework</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\SexyAppFramework;.\SexyAppFramework\sound\SDL-Mixer-X\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\SexyAppFramework;.\SexyAppFramework\sound\SDL-Mixer-X\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>jpeg.lib;png.lib;z.lib;lib\SDL2_mixer_ext-static.lib;openmpt.lib;mpg123.lib;vorbisfile.lib;vorbis.lib;ogg.lib;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\SDL2maind.lib;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\SDL2d.lib;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\glew32d.lib;opengl32.lib;ws2_32.lib;ddraw.lib;dinput8.lib;dxguid.lib;dxerr8.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;shlwapi.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -static -static-libgcc -static-libstdc++</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/jerem/OneDrive/Documents/OGL/cmake-build/Debug/SexyAppFramework.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/jerem/OneDrive/Documents/OGL/cmake-build/Debug/SexyAppFramework.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>glew32.lib;glm.lib;jpeg.lib;libpng16.lib;GlU32.Lib;OpenGL32.Lib;SDL2.lib;SDL2_mixer.lib;turbojpeg.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\GLM;$(SolutionDir)Dependencies\include\SDL2;$(SolutionDir)Dependencies\include\unix;$(SolutionDir)SexyAppFramework\sound\SDL-Mixer-X\include;$(SolutionDir)SexyAppFramework</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_DEBUG;WINDOWS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_DEBUG;WINDOWS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\SexyAppFramework;.\SexyAppFramework\sound\SDL-Mixer-X\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\SexyAppFramework;.\SexyAppFramework\sound\SDL-Mixer-X\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/jerem/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/jerem/OneDrive/Documents/OGL/cmake-build/Release/SexyAppFramework.exe -installedDir C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>jpeg.lib;png.lib;z.lib;lib\SDL2_mixer_ext-static.lib;openmpt.lib;mpg123.lib;vorbisfile.lib;vorbis.lib;ogg.lib;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\lib\manual-link\SDL2main.lib;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\lib\SDL2.lib;C:\Users\jerem\OneDrive\Documents\vcpkg\installed\x64-windows\lib\glew32.lib;opengl32.lib;ws2_32.lib;ddraw.lib;dinput8.lib;dxguid.lib;dxerr8.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;shlwapi.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -static -static-libgcc -static-libstdc++</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/jerem/OneDrive/Documents/OGL/cmake-build/Release/SexyAppFramework.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/jerem/OneDrive/Documents/OGL/cmake-build/Release/SexyAppFramework.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>glew32.lib;glm.lib;jpeg.lib;libpng16.lib;OpenGL32.Lib;SDL2.lib;SDL2_mixer.lib;turbojpeg.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".\SexyAppFramework\Common.cpp" />
+    <ClCompile Include="SexyAppFramework\graphics\GLInterface.cpp" />
+    <ClCompile Include="SexyAppFramework\ogg\bitwise.c" />
+    <ClCompile Include="SexyAppFramework\ogg\block.c" />
+    <ClCompile Include="SexyAppFramework\ogg\codebook.c" />
+    <ClCompile Include="SexyAppFramework\ogg\floor0.c" />
+    <ClCompile Include="SexyAppFramework\ogg\floor1.c" />
+    <ClCompile Include="SexyAppFramework\ogg\framing.c" />
+    <ClCompile Include="SexyAppFramework\ogg\info.c" />
+    <ClCompile Include="SexyAppFramework\ogg\mapping0.c" />
+    <ClCompile Include="SexyAppFramework\ogg\mdct.c" />
+    <ClCompile Include="SexyAppFramework\ogg\registry.c" />
+    <ClCompile Include="SexyAppFramework\ogg\res012.c" />
+    <ClCompile Include="SexyAppFramework\ogg\sharedbook.c" />
+    <ClCompile Include="SexyAppFramework\ogg\synthesis.c" />
+    <ClCompile Include="SexyAppFramework\ogg\vorbisfile.c" />
+    <ClCompile Include="SexyAppFramework\ogg\window.c" />
+    <ResourceCompile Include=".\SexyAppFramework\SexyAppFramework.rc" />
+    <ClCompile Include=".\SexyAppFramework\SexyApp.cpp" />
+    <ClCompile Include=".\SexyAppFramework\SexyAppBase.cpp" />
+    <ClCompile Include=".\SexyAppFramework\fcaseopen\fcaseopen.c" />
+    <ClCompile Include=".\SexyAppFramework\graphics\Color.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\Font.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\GLImage.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\Graphics.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\Image.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\ImageFont.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\MemoryImage.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\NativeDisplay.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\Quantize.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\SWTri.cpp" />
+    <ClCompile Include=".\SexyAppFramework\graphics\SharedImage.cpp" />
+    <ClCompile Include=".\SexyAppFramework\imagelib\ImageLib.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\Buffer.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\CritSect.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\Debug.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\DescParser.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\Flags.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\KeyCodes.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\MTRand.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\ModVal.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\PerfTimer.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\PropertiesParser.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\Ratio.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\RegEmu.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\ResourceManager.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\SexyMatrix.cpp" />
+    <ClCompile Include=".\SexyAppFramework\misc\XMLParser.cpp" />
+    <ClCompile Include=".\SexyAppFramework\paklib\PakInterface.cpp" />
+    <ClCompile Include=".\SexyAppFramework\sound\SDLMusicInterface.cpp" />
+    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundInstance.cpp" />
+    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundManager.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\ButtonWidget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\Checkbox.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\Dialog.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\DialogButton.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\EditWidget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\HyperlinkWidget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\Insets.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\ListWidget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\ScrollbarWidget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\ScrollbuttonWidget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\Slider.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\TextWidget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\Widget.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\WidgetContainer.cpp" />
+    <ClCompile Include=".\SexyAppFramework\widget\WidgetManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\include\unix\syscorecrt.h" />
+    <ClInclude Include="SexyAppFramework\Common.h" />
+    <ClInclude Include="SexyAppFramework\fcaseopen\fcaseopen.h" />
+    <ClInclude Include="SexyAppFramework\graphics\Color.h" />
+    <ClInclude Include="SexyAppFramework\graphics\Font.h" />
+    <ClInclude Include="SexyAppFramework\graphics\GLImage.h" />
+    <ClInclude Include="SexyAppFramework\graphics\GLInterface.h" />
+    <ClInclude Include="SexyAppFramework\graphics\Graphics.h" />
+    <ClInclude Include="SexyAppFramework\graphics\Image.h" />
+    <ClInclude Include="SexyAppFramework\graphics\ImageFont.h" />
+    <ClInclude Include="SexyAppFramework\graphics\MemoryImage.h" />
+    <ClInclude Include="SexyAppFramework\graphics\NativeDisplay.h" />
+    <ClInclude Include="SexyAppFramework\graphics\Quantize.h" />
+    <ClInclude Include="SexyAppFramework\graphics\SharedImage.h" />
+    <ClInclude Include="SexyAppFramework\graphics\SWTri.h" />
+    <ClInclude Include="SexyAppFramework\graphics\TriVertex.h" />
+    <ClInclude Include="SexyAppFramework\imagelib\ImageLib.h" />
+    <ClInclude Include="SexyAppFramework\misc\AutoCrit.h" />
+    <ClInclude Include="SexyAppFramework\misc\Buffer.h" />
+    <ClInclude Include="SexyAppFramework\misc\CritSect.h" />
+    <ClInclude Include="SexyAppFramework\misc\Debug.h" />
+    <ClInclude Include="SexyAppFramework\misc\DescParser.h" />
+    <ClInclude Include="SexyAppFramework\misc\Flags.h" />
+    <ClInclude Include="SexyAppFramework\misc\KeyCodes.h" />
+    <ClInclude Include="SexyAppFramework\misc\memmgr.h" />
+    <ClInclude Include="SexyAppFramework\misc\ModVal.h" />
+    <ClInclude Include="SexyAppFramework\misc\MTRand.h" />
+    <ClInclude Include="SexyAppFramework\misc\PerfTimer.h" />
+    <ClInclude Include="SexyAppFramework\misc\Point.h" />
+    <ClInclude Include="SexyAppFramework\misc\PropertiesParser.h" />
+    <ClInclude Include="SexyAppFramework\misc\Ratio.h" />
+    <ClInclude Include="SexyAppFramework\misc\Rect.h" />
+    <ClInclude Include="SexyAppFramework\misc\RegEmu.h" />
+    <ClInclude Include="SexyAppFramework\misc\ResourceManager.h" />
+    <ClInclude Include="SexyAppFramework\misc\SexyMatrix.h" />
+    <ClInclude Include="SexyAppFramework\misc\SexyVector.h" />
+    <ClInclude Include="SexyAppFramework\misc\SmartPtr.h" />
+    <ClInclude Include="SexyAppFramework\misc\XMLParser.h" />
+    <ClInclude Include="SexyAppFramework\ogg\asm_arm.h" />
+    <ClInclude Include="SexyAppFramework\ogg\backends.h" />
+    <ClInclude Include="SexyAppFramework\ogg\codebook.h" />
+    <ClInclude Include="SexyAppFramework\ogg\codec_internal.h" />
+    <ClInclude Include="SexyAppFramework\ogg\config_types.h" />
+    <ClInclude Include="SexyAppFramework\ogg\ivorbiscodec.h" />
+    <ClInclude Include="SexyAppFramework\ogg\ivorbisfile.h" />
+    <ClInclude Include="SexyAppFramework\ogg\lsp_lookup.h" />
+    <ClInclude Include="SexyAppFramework\ogg\mdct.h" />
+    <ClInclude Include="SexyAppFramework\ogg\mdct_lookup.h" />
+    <ClInclude Include="SexyAppFramework\ogg\misc.h" />
+    <ClInclude Include="SexyAppFramework\ogg\ogg.h" />
+    <ClInclude Include="SexyAppFramework\ogg\os.h" />
+    <ClInclude Include="SexyAppFramework\ogg\os_types.h" />
+    <ClInclude Include="SexyAppFramework\ogg\registry.h" />
+    <ClInclude Include="SexyAppFramework\ogg\window.h" />
+    <ClInclude Include="SexyAppFramework\ogg\window_lookup.h" />
+    <ClInclude Include="SexyAppFramework\ogg\_G_config.h" />
+    <ClInclude Include="SexyAppFramework\paklib\PakInterface.h" />
+    <ClInclude Include="SexyAppFramework\SexyApp.h" />
+    <ClInclude Include="SexyAppFramework\SexyAppBase.h" />
+    <ClInclude Include="SexyAppFramework\sound\DummyMusicInterface.h" />
+    <ClInclude Include="SexyAppFramework\sound\MusicInterface.h" />
+    <ClInclude Include="SexyAppFramework\sound\SDLMusicInterface.h" />
+    <ClInclude Include="SexyAppFramework\sound\SDLSoundInstance.h" />
+    <ClInclude Include="SexyAppFramework\sound\SDLSoundManager.h" />
+    <ClInclude Include="SexyAppFramework\sound\SoundInstance.h" />
+    <ClInclude Include="SexyAppFramework\sound\SoundManager.h" />
+    <ClInclude Include="SexyAppFramework\widget\ButtonListener.h" />
+    <ClInclude Include="SexyAppFramework\widget\ButtonWidget.h" />
+    <ClInclude Include="SexyAppFramework\widget\Checkbox.h" />
+    <ClInclude Include="SexyAppFramework\widget\CheckboxListener.h" />
+    <ClInclude Include="SexyAppFramework\widget\Dialog.h" />
+    <ClInclude Include="SexyAppFramework\widget\DialogButton.h" />
+    <ClInclude Include="SexyAppFramework\widget\DialogListener.h" />
+    <ClInclude Include="SexyAppFramework\widget\EditListener.h" />
+    <ClInclude Include="SexyAppFramework\widget\EditWidget.h" />
+    <ClInclude Include="SexyAppFramework\widget\HyperlinkWidget.h" />
+    <ClInclude Include="SexyAppFramework\widget\Insets.h" />
+    <ClInclude Include="SexyAppFramework\widget\ListListener.h" />
+    <ClInclude Include="SexyAppFramework\widget\ListWidget.h" />
+    <ClInclude Include="SexyAppFramework\widget\ScrollbarWidget.h" />
+    <ClInclude Include="SexyAppFramework\widget\ScrollbuttonWidget.h" />
+    <ClInclude Include="SexyAppFramework\widget\ScrollListener.h" />
+    <ClInclude Include="SexyAppFramework\widget\Slider.h" />
+    <ClInclude Include="SexyAppFramework\widget\SliderListener.h" />
+    <ClInclude Include="SexyAppFramework\widget\TextWidget.h" />
+    <ClInclude Include="SexyAppFramework\widget\Widget.h" />
+    <ClInclude Include="SexyAppFramework\widget\WidgetContainer.h" />
+    <ClInclude Include="SexyAppFramework\widget\WidgetManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SexyAppFramework\graphics\inc_routines\BltRotatedHelper.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_Additive.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_AlphaBlt.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_BltRotated.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_BltRotated_Additive.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_FastBlt_NoAlpha.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_FastStretch.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_FastStretch_Additive.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\DDI_NormalBlt_Volatile.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\GENERIC_DrawLineAA.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_AdditiveBlt.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_BltRotated.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_BltRotated_Additive.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_GetNativeAlphaData.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_GetRLAlphaData.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_NormalBlt.inc" />
+    <None Include="SexyAppFramework\graphics\inc_routines\MI_SlowStretchBlt.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
