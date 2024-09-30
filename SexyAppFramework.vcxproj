@@ -56,11 +56,11 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)Dependencies\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Dependencies\;$(SolutionDir)Dependencies\Other;$(SolutionDir)Dependencies\Audio;$(SolutionDir)Dependencies\Other\FMT;$(SolutionDir)Dependencies\Formats;$(SolutionDir)Dependencies\Formats\Jpeg;$(SolutionDir)Dependencies\Formats\Png;$(SolutionDir)Dependencies\Rendering;$(SolutionDir)Dependencies\Rendering\SDL2;$(SolutionDir)Dependencies\Rendering\EGL;$(SolutionDir)Dependencies\Rendering\OpenGL;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\lib\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)Dependencies\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Dependencies\;$(SolutionDir)Dependencies\Other;$(SolutionDir)Dependencies\Audio;$(SolutionDir)Dependencies\Other\FMT;$(SolutionDir)Dependencies\Formats;$(SolutionDir)Dependencies\Formats\Jpeg;$(SolutionDir)Dependencies\Formats\Png;$(SolutionDir)Dependencies\Rendering;$(SolutionDir)Dependencies\Rendering\SDL2;$(SolutionDir)Dependencies\Rendering\EGL;$(SolutionDir)Dependencies\Rendering\OpenGL;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\lib\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

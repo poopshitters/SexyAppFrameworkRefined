@@ -10,9 +10,6 @@
     <Filter Include="Graphics\Graphics Include">
       <UniqueIdentifier>{b8b6a307-f861-49fd-a512-eea934bbb16a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphics\Inc Routines">
-      <UniqueIdentifier>{4916962e-c9e6-4489-bb85-405132d636d1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ImageLib">
       <UniqueIdentifier>{e01c1276-7e69-4406-83e5-d89c1706b7a8}</UniqueIdentifier>
     </Filter>
@@ -57,6 +54,9 @@
     </Filter>
     <Filter Include="Common">
       <UniqueIdentifier>{30c4965b-d159-4e77-beeb-63a463efff37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Inc Routines">
+      <UniqueIdentifier>{4916962e-c9e6-4489-bb85-405132d636d1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -201,9 +201,6 @@
     <ClCompile Include=".\SexyAppFramework\fcaseopen\fcaseopen.c">
       <Filter>FCaseOpen</Filter>
     </ClCompile>
-    <ClCompile Include=".\SexyAppFramework\Common.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
     <ClCompile Include=".\SexyAppFramework\SexyApp.cpp">
       <Filter>Common</Filter>
     </ClCompile>
@@ -253,7 +250,10 @@
       <Filter>Sound\Ogg</Filter>
     </ClCompile>
     <ClCompile Include=".\SexyAppFramework\SexyAppBase.cpp" />
-    <ClCompile Include="SexyAppFramework\graphics\GLInterface.cpp" />
+    <ClCompile Include=".\SexyAppFramework\Common.cpp" />
+    <ClCompile Include="SexyAppFramework\graphics\GLInterface.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SexyAppFramework\misc\Buffer.h">
@@ -454,9 +454,6 @@
     <ClInclude Include="SexyAppFramework\widget\SliderListener.h">
       <Filter>Widget\Widget Listeners</Filter>
     </ClInclude>
-    <ClInclude Include="SexyAppFramework\Common.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="SexyAppFramework\SexyApp.h">
       <Filter>Common</Filter>
     </ClInclude>
@@ -515,6 +512,7 @@
       <Filter>Sound\Ogg</Filter>
     </ClInclude>
     <ClInclude Include="SexyAppFramework\SexyAppBase.h" />
+    <ClInclude Include="SexyAppFramework\Common.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SexyAppFramework\graphics\inc_routines\BltRotatedHelper.inc">
