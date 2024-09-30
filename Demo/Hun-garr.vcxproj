@@ -59,7 +59,7 @@
     <ClCompile>
       <AdditionalOptions>/wd4996 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\;$(SolutionDir)Dependencies\include\GLM;$(SolutionDir)Dependencies\include\SDL2;$(SolutionDir)Dependencies\include\unix;$(SolutionDir)SexyAppFramework\sound\SDL-Mixer-X\include;$(SolutionDir)SexyAppFramework;..\SexyAppFramework</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\Rendering\SDL2;$(SolutionDir)SexyAppFramework;$(SolutionDir)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -92,7 +92,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\;$(SolutionDir)Dependencies\include\GLM;$(SolutionDir)Dependencies\include\SDL2;$(SolutionDir)Dependencies\include\unix;$(SolutionDir)SexyAppFramework\sound\SDL-Mixer-X\include;$(SolutionDir)SexyAppFramework;..\SexyAppFramework</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\Rendering\SDL2;$(SolutionDir)SexyAppFramework;$(SolutionDir)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>

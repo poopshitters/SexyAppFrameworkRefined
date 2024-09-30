@@ -56,16 +56,18 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)Dependencies\;$(SolutionDir)Dependencies\Other;$(SolutionDir)Dependencies\Audio;$(SolutionDir)Dependencies\Other\FMT;$(SolutionDir)Dependencies\Formats;$(SolutionDir)Dependencies\Formats\Jpeg;$(SolutionDir)Dependencies\Formats\Png;$(SolutionDir)Dependencies\Rendering;$(SolutionDir)Dependencies\Rendering\SDL2;$(SolutionDir)Dependencies\Rendering\EGL;$(SolutionDir)Dependencies\Rendering\OpenGL;$(IncludePath)</IncludePath>
+    <IncludePath>
+    </IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\lib\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)Dependencies\;$(SolutionDir)Dependencies\Other;$(SolutionDir)Dependencies\Audio;$(SolutionDir)Dependencies\Other\FMT;$(SolutionDir)Dependencies\Formats;$(SolutionDir)Dependencies\Formats\Jpeg;$(SolutionDir)Dependencies\Formats\Png;$(SolutionDir)Dependencies\Rendering;$(SolutionDir)Dependencies\Rendering\SDL2;$(SolutionDir)Dependencies\Rendering\EGL;$(SolutionDir)Dependencies\Rendering\OpenGL;$(IncludePath)</IncludePath>
+    <IncludePath>
+    </IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\lib\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\GLM;$(SolutionDir)Dependencies\include\SDL2;$(SolutionDir)Dependencies\include\unix;$(SolutionDir)SexyAppFramework\sound\SDL-Mixer-X\include;$(SolutionDir)SexyAppFramework</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SexyAppFramework\;$(SolutionDir)Dependencies\include\;$(SolutionDir)Dependencies\include\Other;$(SolutionDir)Dependencies\include\Audio;$(SolutionDir)Dependencies\include\Other\FMT;$(SolutionDir)Dependencies\include\Formats;$(SolutionDir)Dependencies\include\Formats\Jpeg;$(SolutionDir)Dependencies\include\Formats\Png;$(SolutionDir)Dependencies\include\Rendering;$(SolutionDir)Dependencies\include\Rendering\SDL2;$(SolutionDir)Dependencies\include\Rendering\EGL;$(SolutionDir)Dependencies\include\Rendering\OpenGL;$(IncludePath)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -126,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\GLM;$(SolutionDir)Dependencies\include\SDL2;$(SolutionDir)Dependencies\include\unix;$(SolutionDir)SexyAppFramework\sound\SDL-Mixer-X\include;$(SolutionDir)SexyAppFramework</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SexyAppFramework\;$(SolutionDir)Dependencies\include\;$(SolutionDir)Dependencies\include\Other;$(SolutionDir)Dependencies\include\Audio;$(SolutionDir)Dependencies\include\Other\FMT;$(SolutionDir)Dependencies\include\Formats;$(SolutionDir)Dependencies\include\Formats\Jpeg;$(SolutionDir)Dependencies\include\Formats\Png;$(SolutionDir)Dependencies\include\Rendering;$(SolutionDir)Dependencies\include\Rendering\SDL2;$(SolutionDir)Dependencies\include\Rendering\EGL;$(SolutionDir)Dependencies\include\Rendering\OpenGL;$(IncludePath)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
