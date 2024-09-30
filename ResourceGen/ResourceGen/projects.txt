@@ -1,4 +1,0 @@
-Test
-C:\Users\jerem\Downloads\PopCap\Demo\Build\Debug\properties\resources.xml
-C:\Users\jerem\Downloads\PopCap\Demo\Res
-

@@ -39,7 +39,13 @@ bld/
 !Dependencies/lib/Debug/
 !Dependencies/lib/Release/
 
-# might get me killed 
+# Resource Gen
+ResourceGen\Common\Debug\
+ResourceGen\Common\Release\
+ResourceGen\Common\.vs\
+ResourceGen\ResourceGen\Debug\
+ResourceGen\ResourceGen\Release\
+ResourceGen\ResourceGen\.vs\
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
