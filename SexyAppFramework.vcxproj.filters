@@ -506,7 +506,6 @@
       <Filter>Sound\Ogg</Filter>
     </ClInclude>
     <ClInclude Include="SexyAppFramework\SexyAppBase.h" />
-    <ClInclude Include="SexyAppFramework\Common.h" />
     <ClInclude Include="SexyAppFramework\sound\bass.h">
       <Filter>Sound</Filter>
     </ClInclude>
@@ -521,6 +520,10 @@
     </ClInclude>
     <ClInclude Include="SexyAppFramework\sound\SDLSoundInstance.h">
       <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\Common.h" />
+    <ClInclude Include="SexyAppFramework\include.h">
+      <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

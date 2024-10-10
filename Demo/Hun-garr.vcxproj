@@ -59,7 +59,7 @@
     <ClCompile>
       <AdditionalOptions>/wd4996 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)SexyAppFramework;C:\Users\jerem\vcpkg\installed\x64-windows-static\include;C:\Users\jerem\vcpkg\installed\x64-windows-static\include\SDL2</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)SexyAppFramework;$(SolutionDir)Dependencies\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -69,8 +69,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <BrowseInformation>true</BrowseInformation>
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level2</WarningLevel>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -82,7 +81,7 @@
       <MapFileName>Hun-garr.map</MapFileName>
       <MapExports>true</MapExports>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\jerem\vcpkg\installed\x64-windows-static\debug\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\debug\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -93,7 +92,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)SexyAppFramework;C:\Users\jerem\vcpkg\installed\x64-windows-static\include;C:\Users\jerem\vcpkg\installed\x64-windows-static\include\SDL2</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)SexyAppFramework;$(SolutionDir)Dependencies\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -103,18 +102,18 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <BrowseInformation>true</BrowseInformation>
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level2</WarningLevel>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>..\Build\$(Configuration)\SexyAppFramework.lib;winmm.lib;wsock32.lib;gdi32.lib;advapi32.lib;shell32.lib</AdditionalDependencies>
+      <AdditionalDependencies>ole32.lib;oleaut32.lib;setupapi.lib;version.lib;uuid.lib;iphlpapi.lib;ws2_32.lib;ddraw.lib;dinput8.lib;dxguid.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;shlwapi.lib;shell32.lib;kernel32.lib;winspool.lib;comdlg32.lib;advapi32.lib;manual-link/SDL2maind.lib;SDL2-staticd.lib;..\Build\$(Configuration)\SexyAppFramework.lib</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -67,11 +67,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)SexyAppFramework;C:\Users\jerem\vcpkg\installed\x64-windows-static\include\SDL2;C:\Users\jerem\vcpkg\installed\x64-windows-static\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)SexyAppFramework;$(SolutionDir)Dependencies\include</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
@@ -84,12 +83,11 @@
       <SupportJustMyCode>
       </SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <WarningLevel>Level2</WarningLevel>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -119,18 +117,16 @@
       <ProgramDataBaseFile>C:/Users/jerem/OneDrive/Documents/OGL/cmake-build/Debug/SexyAppFramework.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <ProjectReference />
     <Lib>
       <AdditionalDependencies>glew32d.lib;glfw3.lib;glm.lib;GlU32.Lib;jpeg.lib;libpng16d.lib;libwavpack.lib;ogg.lib;manual-link/SDL2maind.lib;SDL2-staticd.lib;SDL2_mixer-staticd.lib;OpenGL32.Lib;turbojpeg.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\jerem\vcpkg\installed\x64-windows-static\debug\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\debug\lib</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)SexyAppFramework;C:\Users\jerem\vcpkg\installed\x64-windows-static\include\SDL2;C:\Users\jerem\vcpkg\installed\x64-windows-static\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)SexyAppFramework;$(SolutionDir)Dependencies\include</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -146,12 +142,9 @@
       <SupportJustMyCode>
       </SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level2</WarningLevel>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_DEBUG;WINDOWS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -194,7 +187,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Lib>
-      <AdditionalDependencies>glew32s.lib;glfw3.lib;glm.lib;GlU32.Lib;jpeg.lib;libpng16.lib;libwavpack.lib;ogg.lib;OpenGL32.Lib;manual-link/SDL2main.lib;SDL2-static.lib;SDL2_mixer-static.lib;SDL2_mixer_ext-static.lib;turbojpeg.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;glm.lib;GlU32.Lib;jpeg.lib;libpng16.lib;libwavpack.lib;ogg.lib;manual-link/SDL2main.lib;SDL2-static.lib;SDL2_mixer-static.lib;OpenGL32.Lib;turbojpeg.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Users\jerem\vcpkg\installed\x64-windows-static\lib</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
@@ -286,6 +279,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="SexyAppFramework\graphics\SWTri.h" />
     <ClInclude Include="SexyAppFramework\graphics\TriVertex.h" />
     <ClInclude Include="SexyAppFramework\imagelib\ImageLib.h" />
+    <ClInclude Include="SexyAppFramework\include.h" />
     <ClInclude Include="SexyAppFramework\misc\AutoCrit.h" />
     <ClInclude Include="SexyAppFramework\misc\Buffer.h" />
     <ClInclude Include="SexyAppFramework\misc\CritSect.h" />
