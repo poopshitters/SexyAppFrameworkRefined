@@ -10,6 +10,8 @@
 #include "graphics/SharedImage.h"
 #include "misc/Ratio.h"
 
+#include "sound/BassMusicInterface.h"
+
 /*
 extern HMODULE gDDrawDLL;
 extern HMODULE gDSoundDLL;

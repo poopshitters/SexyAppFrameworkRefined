@@ -10,17 +10,6 @@
 
 #include "misc/PerfTimer.h"
 
-#ifndef _WIN32
-
-#include <unistd.h>
-#include <dirent.h>
-
-#else
-
-#define mkdir(dir, mode) mkdir(dir)
-
-#endif
-
 //HINSTANCE Sexy::gHInstance;
 bool Sexy::gDebug = false;
 static Sexy::MTRand gMTRand;
@@ -114,6 +103,9 @@ std::string Sexy::URLEncode(const std::string& theString)
 
 	return aString;
 }
+
+//TODO: remove widestring???
+//ALSO TODO: remove popcap's stupid string implementation??
 
 std::string Sexy::StringToUpper(const std::string& theString)
 {

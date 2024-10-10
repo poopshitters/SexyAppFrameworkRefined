@@ -3,7 +3,7 @@
 #include "MusicInterface.h"
 
 #include <SDL.h>
-#include <SDL_mixer_ext/SDL_mixer_ext.h>
+#include <SDL_mixer_ext.h>
 
 namespace Sexy
 {

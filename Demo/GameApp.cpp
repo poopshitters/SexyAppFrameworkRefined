@@ -70,7 +70,7 @@ void GameApp::Init()
 {
 	SexyAppBase::Init();
 	
-	SetMusicVolume(0);
+	//SetMusicVolume(0);
 
 	LoadResourceManifest();
 	if (!mResourceManager->LoadResources("Init"))
@@ -136,7 +136,7 @@ void GameApp::Init()
 //////////////////////////////////////////////////////////////////////////
 void GameApp::LoadingThreadProc()
 {
-	SetMusicVolume(0.85);
+	//SetMusicVolume(0.85);
 	mResourceManager->StartLoadResources("Game");
 
 	while (mResourceManager->LoadNextResource())

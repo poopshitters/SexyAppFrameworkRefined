@@ -67,7 +67,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)SexyAppFramework\;$(SolutionDir)Dependencies\include\;$(SolutionDir)Dependencies\include\Other;$(SolutionDir)Dependencies\include\Audio;$(SolutionDir)Dependencies\include\Other\FMT;$(SolutionDir)Dependencies\include\Formats;$(SolutionDir)Dependencies\include\Formats\Jpeg;$(SolutionDir)Dependencies\include\Formats\Png;$(SolutionDir)Dependencies\include\Rendering;$(SolutionDir)Dependencies\include\Rendering\SDL2;$(SolutionDir)Dependencies\include\Rendering\EGL;$(SolutionDir)Dependencies\include\Rendering\OpenGL;$(IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)SexyAppFramework;C:\Users\jerem\vcpkg\installed\x64-windows-static\include\SDL2;C:\Users\jerem\vcpkg\installed\x64-windows-static\include</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -123,12 +123,14 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Lib>
-      <AdditionalDependencies>glew32.lib;glm.lib;jpeg.lib;libpng16.lib;GlU32.Lib;OpenGL32.Lib;SDL2.lib;SDL2_mixer.lib;turbojpeg.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32d.lib;glfw3.lib;glm.lib;GlU32.Lib;jpeg.lib;libpng16d.lib;libwavpack.lib;ogg.lib;manual-link/SDL2maind.lib;SDL2-staticd.lib;SDL2_mixer-staticd.lib;OpenGL32.Lib;turbojpeg.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\jerem\vcpkg\installed\x64-windows-static\debug\lib\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)SexyAppFramework\;$(SolutionDir)Dependencies\include\;$(SolutionDir)Dependencies\include\Other;$(SolutionDir)Dependencies\include\Audio;$(SolutionDir)Dependencies\include\Other\FMT;$(SolutionDir)Dependencies\include\Formats;$(SolutionDir)Dependencies\include\Formats\Jpeg;$(SolutionDir)Dependencies\include\Formats\Png;$(SolutionDir)Dependencies\include\Rendering;$(SolutionDir)Dependencies\include\Rendering\SDL2;$(SolutionDir)Dependencies\include\Rendering\EGL;$(SolutionDir)Dependencies\include\Rendering\OpenGL;$(IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)SexyAppFramework;C:\Users\jerem\vcpkg\installed\x64-windows-static\include\SDL2;C:\Users\jerem\vcpkg\installed\x64-windows-static\include</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include" /external:I "C:/Users/jerem/OneDrive/Documents/vcpkg/installed/x64-windows/include/SDL2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -192,7 +194,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Lib>
-      <AdditionalDependencies>glew32.lib;glm.lib;jpeg.lib;libpng16.lib;OpenGL32.Lib;SDL2.lib;SDL2_mixer.lib;turbojpeg.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;glm.lib;GlU32.Lib;jpeg.lib;libpng16.lib;libwavpack.lib;ogg.lib;OpenGL32.Lib;manual-link/SDL2main.lib;SDL2-static.lib;SDL2_mixer-static.lib;SDL2_mixer_ext-static.lib;turbojpeg.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\jerem\vcpkg\installed\x64-windows-static\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -213,6 +217,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="SexyAppFramework\ogg\synthesis.c" />
     <ClCompile Include="SexyAppFramework\ogg\vorbisfile.c" />
     <ClCompile Include="SexyAppFramework\ogg\window.c" />
+    <ClCompile Include="SexyAppFramework\sound\BassLoader.cpp" />
+    <ClCompile Include="SexyAppFramework\sound\BassMusicInterface.cpp" />
+    <ClCompile Include="SexyAppFramework\sound\SDLSoundInstance.cpp" />
+    <ClCompile Include="SexyAppFramework\sound\SDLSoundManager.cpp" />
     <ResourceCompile Include=".\SexyAppFramework\SexyAppFramework.rc" />
     <ClCompile Include=".\SexyAppFramework\SexyApp.cpp" />
     <ClCompile Include=".\SexyAppFramework\SexyAppBase.cpp" />
@@ -245,9 +253,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include=".\SexyAppFramework\misc\SexyMatrix.cpp" />
     <ClCompile Include=".\SexyAppFramework\misc\XMLParser.cpp" />
     <ClCompile Include=".\SexyAppFramework\paklib\PakInterface.cpp" />
-    <ClCompile Include=".\SexyAppFramework\sound\SDLMusicInterface.cpp" />
-    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundInstance.cpp" />
-    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundManager.cpp" />
     <ClCompile Include=".\SexyAppFramework\widget\ButtonWidget.cpp" />
     <ClCompile Include=".\SexyAppFramework\widget\Checkbox.cpp" />
     <ClCompile Include=".\SexyAppFramework\widget\Dialog.cpp" />
@@ -323,9 +328,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="SexyAppFramework\paklib\PakInterface.h" />
     <ClInclude Include="SexyAppFramework\SexyApp.h" />
     <ClInclude Include="SexyAppFramework\SexyAppBase.h" />
+    <ClInclude Include="SexyAppFramework\sound\bass.h" />
+    <ClInclude Include="SexyAppFramework\sound\BassLoader.h" />
+    <ClInclude Include="SexyAppFramework\sound\BassMusicInterface.h" />
     <ClInclude Include="SexyAppFramework\sound\DummyMusicInterface.h" />
     <ClInclude Include="SexyAppFramework\sound\MusicInterface.h" />
-    <ClInclude Include="SexyAppFramework\sound\SDLMusicInterface.h" />
     <ClInclude Include="SexyAppFramework\sound\SDLSoundInstance.h" />
     <ClInclude Include="SexyAppFramework\sound\SDLSoundManager.h" />
     <ClInclude Include="SexyAppFramework\sound\SoundInstance.h" />

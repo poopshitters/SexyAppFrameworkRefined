@@ -13,7 +13,9 @@
 
 #include <optional>
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
+
+#include <SDL_syswm.h>
 
 #include "SexyAppBase.h"
 //#include "misc/SEHCatcher.h"
@@ -180,13 +182,7 @@ SexyAppBase::SexyAppBase()
 	//mProductVersion = GetProductVersion(aPath);	
 	//mChangeDirTo = GetFileDir(aPath);
 
-#ifdef _SWITCH__
-	mChangeDirTo = "sdmc:/switch/PlantsvsZombies/";
-#elifdef __3DS__
-	mChangeDirTo = "sdmc:/3ds/PlantsvsZombies/";
-#else
 	mChangeDirTo = "./";
-#endif
 
 	mNoDefer = false;	
 	mFullScreenPageFlip = true; // should we page flip in fullscreen?
@@ -2296,7 +2292,7 @@ void SexyAppBase::Shutdown()
 
 		RestoreScreenResolution();
 
-		if (mReadFromRegistry)
+		//if (mReadFromRegistry)
 			WriteToRegistry();
 
 		//ImageLib::CloseJPEG2000();
@@ -2887,12 +2883,6 @@ int SexyAppBase::MsgBox(const std::string& theText, const std::string& theTitle,
 	//int aResult = MessageBoxA(mHWnd, theText.c_str(), theTitle.c_str(), theFlags);
 	printf("%s\n===\n%s\n", theTitle.c_str(), theText.c_str());
 
-#ifdef _SWITCH__
-	ErrorApplicationConfig c;
-	errorApplicationCreate(&c, theTitle.c_str(), theText.c_str());
-	errorApplicationShow(&c);
-#endif
-
 	EndPopup();
 
 	return 0;
@@ -2914,13 +2904,6 @@ int SexyAppBase::MsgBox(const std::wstring& theText, const std::wstring& theTitl
 	//int aResult = MessageBoxW(mHWnd, theText.c_str(), theTitle.c_str(), theFlags);
 	wprintf(L"%s\n===\n%s\n", theTitle.c_str(), theText.c_str());
 
-#ifdef _SWITCH__
-	std::wstring_convert<std::codecvt_utf8<wchar_t> > cv;
-	ErrorApplicationConfig c;
-	errorApplicationCreate(&c, cv.to_bytes(theTitle).c_str(), cv.to_bytes(theText).c_str());
-	errorApplicationShow(&c);
-#endif
-
 	EndPopup();
 
 	return 0;
@@ -2938,12 +2921,6 @@ void SexyAppBase::Popup(const std::string& theString)
 	if (!mShutdown)
 		printf("FATAL ERROR\n===\n%s\n", theString.c_str());
 
-#ifdef _SWITCH__
-	ErrorApplicationConfig c;
-	errorApplicationCreate(&c, "Fatal error", theString.c_str());
-	errorApplicationShow(&c);
-#endif
-
 	EndPopup();
 }
 
@@ -2958,13 +2935,6 @@ void SexyAppBase::Popup(const std::wstring& theString)
 	BeginPopup();
 	if (!mShutdown)
 		wprintf(L"FATAL ERROR\n===\n%s\n", theString.c_str());
-
-#ifdef _SWITCH__
-	std::wstring_convert<std::codecvt_utf8<wchar_t> > cv;
-	ErrorApplicationConfig c;
-	errorApplicationCreate(&c, "Fatal error", cv.to_bytes(theString).c_str());
-	errorApplicationShow(&c);
-#endif
 
 	EndPopup();
 }
@@ -4897,7 +4867,13 @@ MusicInterface* SexyAppBase::CreateMusicInterface()
 	if (mNoSoundNeeded)
 		return new DummyMusicInterface();
 	else
-		return new SDLMusicInterface();
+	{
+		SDL_SysWMinfo wmInfo;
+		SDL_VERSION(&wmInfo.version);
+		SDL_GetWindowWMInfo((SDL_Window*)mWindow, &wmInfo);
+		HWND hwnd = wmInfo.info.win.window;
+		return new BassMusicInterface(hwnd);
+	}
 }
 
 void SexyAppBase::InitPropertiesHook()

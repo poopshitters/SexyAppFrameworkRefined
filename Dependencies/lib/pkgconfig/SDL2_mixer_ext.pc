@@ -1,0 +1,13 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SDL2_mixer_ext
+Description: SDL Mixer X, a fork of SDL_mixer, a mixer library for Simple DirectMedia Layer
+Version: 2.7.0.0
+
+
+Libs: "-L${libdir}" -lSDL2_mixer_ext
+Requires: sdl2 >= 2.0.7
+Cflags: "-I${includedir}/SDL2"

@@ -168,15 +168,6 @@
     <ClCompile Include=".\SexyAppFramework\misc\XMLParser.cpp">
       <Filter>Misc\Misc Source</Filter>
     </ClCompile>
-    <ClCompile Include=".\SexyAppFramework\sound\SDLMusicInterface.cpp">
-      <Filter>Sound\Sound Source</Filter>
-    </ClCompile>
-    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundInstance.cpp">
-      <Filter>Sound\Sound Source</Filter>
-    </ClCompile>
-    <ClCompile Include=".\SexyAppFramework\sound\SDLSoundManager.cpp">
-      <Filter>Sound\Sound Source</Filter>
-    </ClCompile>
     <ClCompile Include=".\SexyAppFramework\graphics\SWTri.cpp">
       <Filter>Graphics\Graphics Source</Filter>
     </ClCompile>
@@ -253,6 +244,18 @@
     <ClCompile Include=".\SexyAppFramework\Common.cpp" />
     <ClCompile Include="SexyAppFramework\graphics\GLInterface.cpp">
       <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\sound\BassLoader.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\sound\BassMusicInterface.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\sound\SDLSoundInstance.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppFramework\sound\SDLSoundManager.cpp">
+      <Filter>Sound\Sound Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -366,15 +369,6 @@
     </ClInclude>
     <ClInclude Include="SexyAppFramework\widget\Slider.h">
       <Filter>Widget\Widget Include</Filter>
-    </ClInclude>
-    <ClInclude Include="SexyAppFramework\sound\SDLMusicInterface.h">
-      <Filter>Sound\Sound Include</Filter>
-    </ClInclude>
-    <ClInclude Include="SexyAppFramework\sound\SDLSoundInstance.h">
-      <Filter>Sound\Sound Include</Filter>
-    </ClInclude>
-    <ClInclude Include="SexyAppFramework\sound\SDLSoundManager.h">
-      <Filter>Sound\Sound Include</Filter>
     </ClInclude>
     <ClInclude Include="SexyAppFramework\graphics\SWTri.h">
       <Filter>Graphics\Graphics Include</Filter>
@@ -513,6 +507,21 @@
     </ClInclude>
     <ClInclude Include="SexyAppFramework\SexyAppBase.h" />
     <ClInclude Include="SexyAppFramework\Common.h" />
+    <ClInclude Include="SexyAppFramework\sound\bass.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\BassLoader.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\BassMusicInterface.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\SDLSoundManager.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppFramework\sound\SDLSoundInstance.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="SexyAppFramework\graphics\inc_routines\BltRotatedHelper.inc">

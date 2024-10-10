@@ -2,6 +2,10 @@
 
 #pragma warning(disable:4786)
 #pragma warning(disable:4503)
+#pragma warning(disable:4006)
+#pragma warning(disable:4244)
+#pragma warning(disable:4267)
+#pragma warning(disable:4996)
 
 #undef _WIN32_WINNT
 #undef WIN32_LEAN_AND_MEAN
@@ -21,7 +25,7 @@
 #include <cstdint>
 #include <ctime>
 
-#include "include.h"
+#include "SAFIncludes.h"
 
 #include "misc/ModVal.h"
 
@@ -34,6 +38,7 @@
 // Removed wide string support
 typedef std::string			SexyString;
 #define _S(x)				x
+#define __S(x)				x
 
 #define sexystrncmp			strncmp
 #define sexystrcmp			strcmp
