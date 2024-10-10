@@ -8,6 +8,8 @@
 #include <mmsystem.h>
 #include <direct.h>
 
+#define mkdir(dir, mode) mkdir(dir)
+
 #define strcasecmp _stricmp
 #define strncasecmp _strnicmp
 #define getcwd _getcwd
