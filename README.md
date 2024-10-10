@@ -1,5 +1,13 @@
 # PopCap Games Framework
 
+## Todo List
+- [ ] Cross Platform - (Done ?)
+   - [x] Modern Rendering System
+   - [ ] Posix/Unix Stuff ?????
+- [ ] TrueType Fonts - DOING
+- [ ] Documentation
+- [ ] JSON Alternative for XML
+
 ## Introduction
 
 ###### Do NOT expect this to be outstandingly good in terms of quality, im still learning little bits of c++ here and there.
