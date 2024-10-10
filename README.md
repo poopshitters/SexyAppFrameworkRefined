@@ -1,5 +1,7 @@
 # PopCap Games Framework
 
+###### Do NOT expect this to be outstandingly good in terms of quality, im still learning little bits of c++ here and there.
+
 ## Todo List
 - [ ] Cross Platform - (Done ?)
    - [x] Modern Rendering System
@@ -9,8 +11,6 @@
 - [ ] JSON Alternative for XML
 
 ## Introduction
-
-###### Do NOT expect this to be outstandingly good in terms of quality, im still learning little bits of c++ here and there.
 
 This is an "refined" variant of PopCap's framework, internally named SexyApp Framework.
 
